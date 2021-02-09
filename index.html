@@ -1,0 +1,97 @@
+<!--
+    This is the version Be4 module add.
+-->
+<!DOCTYPE html>
+<html>
+    <head><title>GAME IT!</title>
+        <!--
+            considering implamentation of reset style sheet
+        -->
+    <link rel="stylesheet" type="text/css" href="./app/css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <!--
+                containerA div holds hero, vs n start button divs
+            -->
+            <div id="containerA">
+<!--
+    hero image view
+-->
+                <div id="hero">
+                
+                </div>
+
+                <div id="versus">
+                <img src="./app/img/versus.png" height="80" width="80"/>
+                </div>
+<!--
+    monster image view
+-->
+                <div id="monster">
+                    <!--
+                        start button div
+                    -->
+                    <div id="startButton">
+                        <input type="button" value="Start!"
+                        onclick="controller.monsterLoader()">
+                    </div>
+                
+                </div>
+            </div>
+<!--
+    containerB holds battle log, commandList divs. Next, adding chiReading
+-->
+            <div id="containerB">
+                <div id="battleLog">
+                    <h2>Battle Log</h2>
+                    <div id="data">
+                    </div>
+                </div>
+
+                <div id="commandList">
+                    <div class="button">
+                    <input
+                        type="button"
+                        value="shuriken"
+                        onclick="controller._fiatShuriken()"/>
+                    </div>
+                    <div class="button">
+                    <input
+                        type="button"
+                        value="transform"
+                        onclick="controller._fiatTransform()"/>
+                    </div>
+                    <div class="button">
+                    <input
+                        type="button"
+                        value="ninjutsu"
+                        onclick="controller._fiatNinjutsu()"/>
+                    </div>
+                    <div class="button">
+                    <input
+                        type="button"
+                        value="sword"
+                        onclick="controller._fiatSword()"/>
+                    </div>
+                </div>
+                <div id="chiReader">
+                    <div id="shuriken" class="reader"></div>
+                    <div id="transform" class="reader"></div>
+                    <div id="ninjutsu" class="reader"></div>
+                    <div id="sword" class="reader"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./app/js/Controller.js"></script>
+        <script src="./app/js/View.js"></script>
+        <script src="./app/js/GameView.js"></script>
+        <script src="./app/js/Hero.js"></script>
+        <script src="./app/js/Monster.js"></script>
+        <script>
+        let controller = new Controller();
+        controller.heroLoader(0);
+        </script>
+
+    </body>
+</html>

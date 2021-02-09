@@ -1,0 +1,75 @@
+#container {
+    display: flex;
+    flex-flow: row;
+    margin-left: 20%;
+}
+
+#containerA {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-flow: line;
+}
+
+#containerB {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-flow: column;
+}
+
+#versus{
+    display: flexbox;
+}
+
+#hero {
+    display: flexbox;
+}
+
+#monster {
+    display: flexbox;
+}
+
+#battleLog {
+    font-size: medium;
+    color: yellow;
+    margin-left: 10%;
+    display: flexbox;
+    background-image: url(./../../../images\ to\ code/zero1.bmp);
+    width: 100%;
+    height: 100%;
+}
+
+#data {
+    margin-left: 5%;
+}
+
+#commandList {
+    background-color: blue;
+    display: flex;
+    flex-flow: row;/*
+    height: 100%;
+    width: 100%;*/
+    margin-left: 10%;
+}
+
+.button input {
+    height: 69px;
+    width: 69px;
+}
+
+#chiReader {
+    display: flex;
+    flex-flow: row;/*
+    width: 100%;*/
+    margin-left: 10%;
+}
+
+.reader img {
+    width: 100%;
+    height: 100%;
+}
+
+.invisible {
+    display: none;
+}
